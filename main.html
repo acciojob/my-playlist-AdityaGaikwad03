@@ -1,16 +1,89 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <style>
+        body {
+            background-color: rgb(204, 204, 204);
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        /* Playlist box */
+        .playlist {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        /* Media player container */
+        .media-box {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        video, audio {
+            width: 100%;
+            display: block;
+        }
+        .audio-title {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Page Title -->
+    <h1>My Playlist</h1>
+
+    <!-- Playlist Box -->
+    <div class="playlist">
+        <ul>
+            <li><a href="#">Song 1</a></li>
+            <li><a href="#">Song 2</a></li>
+            <li><a href="#">Song 3</a></li>
+            <li><a href="#">Song 4</a></li>
+            <li><a href="#">Song 5</a></li>
+        </ul>
+    </div>
+
+    <!-- Now Playing -->
+    <h2>Now Playing...</h2>
+
+    <!-- Video + Audio Box -->
+    <div class="media-box">
+        <video controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>MP3 songs</h2>
+        <div class="audio-title">Maan Meri Jaan</div>
+        <audio controls>
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
 </body>
-
 </html>
